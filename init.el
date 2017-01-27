@@ -1,6 +1,10 @@
 (require 'package)
 (package-initialize)
 
+; (setq debug-on-error t
+;       debug-on-signal nil
+;       debug-on-quit nil)
+  
 (add-to-list 'load-path "~/.emacs.d/org-mode/lisp")
 (add-to-list 'load-path "~/.emacs.d/org-mode/contrib/lisp" t)
 

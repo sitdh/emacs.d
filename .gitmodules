@@ -1,0 +1,6 @@
+[submodule "plugins/evil"]
+	path = plugins/evil
+	url = https://github.com/emacs-evil/evil
+[submodule "plugins/org-mode"]
+	path = plugins/org-mode
+	url = https://github.com/jwiegley/org-mode

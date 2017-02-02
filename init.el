@@ -1,10 +1,9 @@
 (require 'package)
 (package-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/org-mode/lisp")
-(add-to-list 'load-path "~/.emacs.d/org-mode/contrib/lisp" t)
-
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'load-path "~/.emacs.d/plugins/org-mode/lisp")
+(add-to-list 'load-path "~/.emacs.d/plugins/org-mode/contrib/lisp" t)
+(add-to-list 'load-path "~/.emacs.d/plugins/evil")
 
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)

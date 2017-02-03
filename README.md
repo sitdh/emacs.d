@@ -5,6 +5,5 @@ My Emacs configuration files
 ## Installation
 
 ```bash
-git clone https://github.com/sitdh/emacs.d ~/.emacs.d
-make
+<M-x package-list-packages>
 ```

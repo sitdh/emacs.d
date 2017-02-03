@@ -15,3 +15,13 @@
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'alt)
+
+;; https://medium.com/@4d47/join-lines-in-emacs-cc40a55e4539#.f5wfiq5cj
+(defun join-lines (n)
+  "Join N lines."
+  (interactive "p")
+    (if (use-region-p)
+      (let ((fill-column (point-max)))
+        (fill-region (region-beginning) (region-end)))
+      (dotimes (_ (abs n))
+        (delete-indentation (natnump n)))))

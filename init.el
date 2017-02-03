@@ -1,5 +1,6 @@
 (require 'package)
 (package-initialize)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (add-to-list 'load-path "~/.emacs.d/plugins/org-mode/lisp")
 (add-to-list 'load-path "~/.emacs.d/plugins/org-mode/contrib/lisp" t)
@@ -9,6 +10,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
+(global-linum-mode 1)
 
 ;;osx keys
 (setq mac-option-key-is-meta nil)
